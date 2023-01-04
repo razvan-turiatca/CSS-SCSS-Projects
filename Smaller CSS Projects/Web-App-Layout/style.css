@@ -5,7 +5,6 @@
 }
 
 nav,
-menu,
 section,
 main,
 aside {
@@ -36,10 +35,50 @@ menu {
   background-color: #7048e8;
   color: #fff;
   grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  background-color: #5f3dc4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
 }
 
 section {
   background-color: #e9ecef;
+  padding: 40px;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.email {
+  background-color: #adb5bd;
+  height: 96px;
+  /* we need flex-shrink here because by using overflow:scroll 
+  in the section the flex elements (.email) shrink. 
+  By using  flex-shrink: 0, instead of shrinking they allow the overflow to do its work.
+  Normally this wouldn't be necessary if these weren't flex elements.*/
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 aside {
