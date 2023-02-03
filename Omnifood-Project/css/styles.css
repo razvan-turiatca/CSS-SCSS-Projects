@@ -109,6 +109,27 @@ This is because we will use this class on different places on the page.*/
   margin-right: 1.6rem !important;
 }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /*********************/
 /* HEADER SECTION */
 /*********************/
@@ -178,7 +199,7 @@ with the text color*/
 }
 
 .hero {
-  max-width: 85vw;
+  max-width: 160rem;
   height: 80vh;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -229,4 +250,13 @@ with the text color*/
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/*********************/
+/* HOW IT WORKS SECTION */
+/*********************/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
