@@ -1,0 +1,158 @@
+/*
+
+---01 TYPOGRAPHY SYSTEM
+
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+
+- Line heights
+Default: 1
+
+
+--- 02 COLORS
+
+- Primary: #E67E22
+- Tints: #fae5d3
+- Shades: cf711f
+- Accents: 
+- Greys: 
+#555
+#333
+
+--- 03 SHADOWS
+
+
+--- 04 BORDER RADIUS
+
+--- 05 SHADOWS
+
+Spacing system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.section-hero {
+  background-color: #fae5d3;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: background-color 300ms;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.hero-image {
+  width: 100%;
+}
+
+/* this is the helper class to add a margin right to an element. 
+We add the important keyword when we want this declaration to always have the highest priority 
+This is because we will use this class on different places on the page.*/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-images {
+  display: flex;
+}
+
+.delivered-images img {
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: -1.6rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-images img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
