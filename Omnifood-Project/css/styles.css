@@ -50,34 +50,16 @@ body {
   font-weight: 400;
   color: #555;
 }
-
-.section-hero {
-  background-color: #fae5d3;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
+/*********************/
+/* REUSABLE GENERAL COMPONENTS */
+/*********************/
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 6.2rem;
   font-weight: 700;
   line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -86,7 +68,7 @@ body {
 
   color: #fff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
@@ -112,9 +94,6 @@ body {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
 }
-.hero-image {
-  width: 100%;
-}
 
 /* this is the helper class to add a margin right to an element. 
 We add the important keyword when we want this declaration to always have the highest priority 
@@ -122,6 +101,53 @@ This is because we will use this class on different places on the page.*/
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+/*********************/
+/* HEADER SECTION */
+/*********************/
+
+.logo {
+  height: 2.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae5d3;
+  height: 9.6rem; /*because we want header to be sticky later*/
+  padding: 0 4.8rem;
+}
+
+/*********************/
+/* HERO SECTION */
+/*********************/
+
+.section-hero {
+  background-color: #fae5d3;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 85vw;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2.6rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 .delivered-meals {
@@ -148,7 +174,7 @@ This is because we will use this class on different places on the page.*/
 }
 
 .delivered-text {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 600;
 }
 
